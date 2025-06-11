@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Mundo de los Amigurumis: Tu Guía de Crochet</title>
+    <link rel="icon" type="image/png" href="images/amigurumi-icon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/amigurumi-icon.ico"
+    />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#hero" class="logo">Amigurumi World</a>
+        <ul class="nav-list">
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#tutorials">Tutoriales</a></li>
+          <li><a href="#patterns">Patrones</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Abrir menú de navegación">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section" aria-labelledby="hero-title">
+        <h1 id="hero-title">Teje tu Magia: Amigurumis Hechos con Amor</h1>
+        <p>
+          Descubre el arte de los amigurumis, tutoriales, patrones y una
+          comunidad apasionada.
+        </p>
+        <a href="#tutorials" class="btn primary-btn">Empezar a Tejer</a>
+      </section>
+
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">Sobre Nosotros</h2>
+          <p>
+            Somos un equipo de entusiastas del crochet dedicados a compartir la
+            alegría de crear amigurumis. Desde principiantes hasta expertos,
+            nuestra misión es proporcionarte los recursos y la inspiración para
+            dar vida a tus personajes de hilo.
+          </p>
+          <p>
+            Explora nuestros tutoriales paso a paso, descubre patrones únicos y
+            únete a nuestra creciente comunidad.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="tutorials"
+        class="tutorials-section"
+        aria-labelledby="tutorials-title"
+      >
+        <div class="container">
+          <h2 id="tutorials-title">Tutoriales de Crochet para Amigurumis</h2>
+          <div class="controls-container">
+            <input
+              type="text"
+              id="tutorialSearch"
+              placeholder="Buscar tutoriales..."
+              aria-label="Buscar tutoriales"
+            />
+            <div class="filter-group">
+              <label for="tutorialDifficulty">Dificultad:</label>
+              <select
+                id="tutorialDifficulty"
+                aria-label="Filtrar tutoriales por dificultad"
+              >
+                <option value="all">Todas</option>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="tutorial-grid"
+            role="group"
+            aria-label="Lista de tutoriales de amigurumis"
+          >
+            <article
+              class="tutorial-card"
+              tabindex="0"
+              data-difficulty="principiante"
+              data-keywords="punto bajo basico pb tejido inicial"
+            >
+              <h3>Punto Bajo Básico para Amigurumis</h3>
+              <img
+                src="images/tutorial_pb_real.jpg"
+                alt="Amigurumi mostrando el punto bajo básico en crochet"
+              />
+              <p>
+                Aprende el punto fundamental para todos tus proyectos de
+                amigurumi. Este tutorial te guiará paso a paso.
+              </p>
+              <button
+                class="show-content-btn"
+                data-type="tutorial"
+                data-id="tutorial1"
+              >
+                Ver Tutorial
+              </button>
+              <div class="full-content hidden" id="tutorial1">
+                <h3>Tutorial Completo: Punto Bajo Básico</h3>
+                <p>
+                  El punto bajo (pb) es la base de la mayoría de los amigurumis
+                  debido a su densidad, que ayuda a mantener el relleno. Aquí te
+                  explicamos cómo hacerlo:
+                </p>
+                <ol>
+                  <li>Inserta el ganchillo en el siguiente punto.</li>
+                  <li>
+                    Haz una lazada y tira del hilo a través del punto (tendrás
+                    dos bucles en el ganchillo).
+                  </li>
+                  <li>
+                    Haz otra lazada y tira del hilo a través de ambos bucles en
+                    el ganchillo.
+                  </li>
+                </ol>
+                <p>¡Para una guía visual completa, mira este video!</p>
+                <div class="video-responsive">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/KHxUbnyuavg?si=vLIjyA1Qvl4x6PhE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="share-buttons">
+                  <a
+                    href="#"
+                    class="share-facebook"
+                    aria-label="Compartir en Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-twitter"
+                    aria-label="Compartir en X (Twitter)"
+                    ><i class="fab fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-whatsapp"
+                    aria-label="Compartir en WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article
+              class="tutorial-card"
+              tabindex="0"
+              data-difficulty="principiante"
+              data-keywords="anillo magico circulo magico inicio"
+            >
+              <h3>Anillo Mágico Perfecto</h3>
+              <img
+                src="images/tutorial_anillo_magico_real.jpg"
+                alt="Manos mostrando cómo hacer un anillo mágico en crochet"
+              />
+              <p>
+                El inicio perfecto para tus amigurumis, evita agujeros y asegura
+                un acabado profesional.
+              </p>
+              <button
+                class="show-content-btn"
+                data-type="tutorial"
+                data-id="tutorial2"
+              >
+                Ver Tutorial
+              </button>
+              <div class="full-content hidden" id="tutorial2">
+                <h3>Tutorial Completo: Anillo Mágico</h3>
+                <p>
+                  El anillo mágico, también conocido como círculo mágico, es una
+                  técnica esencial para empezar proyectos de amigurumis sin
+                  dejar un agujero en el centro. Sigue estos pasos:
+                </p>
+                <ol>
+                  <li>Haz un lazo con el hilo alrededor de tus dedos.</li>
+                  <li>
+                    Inserta el ganchillo en el lazo, haz una lazada y saca el
+                    hilo.
+                  </li>
+                  <li>Haz una cadena para asegurar.</li>
+                  <li>
+                    Ahora, trabaja tus primeros puntos bajos (o los puntos que
+                    indique tu patrón) dentro del lazo.
+                  </li>
+                  <li>
+                    Una vez que hayas hecho los puntos, tira del extremo corto
+                    del hilo para cerrar el círculo.
+                  </li>
+                </ol>
+                <p>¡Y listo! Un anillo mágico perfecto.</p>
+                <div class="share-buttons">
+                  <a
+                    href="#"
+                    class="share-facebook"
+                    aria-label="Compartir en Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-twitter"
+                    aria-label="Compartir en X (Twitter)"
+                    ><i class="fab fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-whatsapp"
+                    aria-label="Compartir en WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="tutorial-card"
+              tabindex="0"
+              data-difficulty="intermedio"
+              data-keywords="aumentos disminuciones invisibles forma dar forma"
+            >
+              <h3>Aumentos y Disminuciones Invisibles</h3>
+              <img
+                src="images/tutorial_aumentos_real.jpg"
+                alt="Amigurumi mostrando la técnica de aumentos y disminuciones invisibles"
+              />
+              <p>
+                Aprende a dar forma a tus amigurumis sin costuras visibles para
+                un acabado pulcro.
+              </p>
+              <button
+                class="show-content-btn"
+                data-type="tutorial"
+                data-id="tutorial3"
+              >
+                Ver Tutorial
+              </button>
+              <div class="full-content hidden" id="tutorial3">
+                <h3>Tutorial Completo: Aumentos y Disminuciones Invisibles</h3>
+                <h4>Aumento Invisible (AumI):</h4>
+                <ol>
+                  <li>Trabaja un punto bajo normal en el primer punto.</li>
+                  <li>
+                    Trabaja otro punto bajo en la misma lazada del primer punto,
+                    pero introduciendo el ganchillo solo en la hebra delantera
+                    (front loop only).
+                  </li>
+                </ol>
+                <p>Este método crea un aumento menos notorio.</p>
+
+                <h4>Disminución Invisible (DismI):</h4>
+                <ol>
+                  <li>
+                    Inserta el ganchillo en la hebra delantera del primer punto.
+                  </li>
+                  <li>
+                    Sin hacer lazada, inserta el ganchillo en la hebra delantera
+                    del segundo punto.
+                  </li>
+                  <li>
+                    Ahora tienes 3 bucles en el ganchillo. Haz una lazada y pasa
+                    el hilo a través de los dos primeros bucles.
+                  </li>
+                  <li>
+                    Haz otra lazada y pasa el hilo a través de los dos bucles
+                    restantes.
+                  </li>
+                </ol>
+                <p>
+                  La disminución invisible ayuda a evitar los agujeros que a
+                  veces se forman con las disminuciones tradicionales.
+                </p>
+                <div class="share-buttons">
+                  <a
+                    href="#"
+                    class="share-facebook"
+                    aria-label="Compartir en Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-twitter"
+                    aria-label="Compartir en X (Twitter)"
+                    ><i class="fab fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-whatsapp"
+                    aria-label="Compartir en WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="patterns"
+        class="patterns-section"
+        aria-labelledby="patterns-title"
+      >
+        <div class="container">
+          <h2 id="patterns-title">Patrones de Amigurumis</h2>
+          <div class="controls-container">
+            <input
+              type="text"
+              id="patternSearch"
+              placeholder="Buscar patrones..."
+              aria-label="Buscar patrones"
+            />
+            <div class="filter-group">
+              <label for="patternDifficulty">Dificultad:</label>
+              <select
+                id="patternDifficulty"
+                aria-label="Filtrar patrones por dificultad"
+              >
+                <option value="all">Todas</option>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="pattern-grid"
+            role="group"
+            aria-label="Lista de patrones de amigurumis"
+          >
+            <article
+              class="pattern-card"
+              tabindex="0"
+              data-difficulty="principiante"
+              data-keywords="mini oso teddy facil juguete"
+            >
+              <h3>Patrón: Mini Oso Teddy</h3>
+              <img
+                src="./imagenes/mini-teddy.jpg"
+                alt="Amigurumi de un mini oso teddy de crochet"
+              />
+              <p>
+                Un patrón adorable para empezar con tus propios amigurumis.
+                Ideal para principiantes.
+              </p>
+              <button
+                class="show-content-btn"
+                data-type="pattern"
+                data-id="pattern1"
+              >
+                Ver Patrón
+              </button>
+              <div class="full-content hidden" id="pattern1">
+                <h3>Patrón Completo: Mini Oso Teddy</h3>
+                <h4>Materiales:</h4>
+                <ul>
+                  <li>
+                    Hilo de algodón o acrílico (color principal y contraste para
+                    la nariz)
+                  </li>
+                  <li>Ganchillo adecuado para tu hilo (ej. 2.5 mm)</li>
+                  <li>Ojos de seguridad (6 mm)</li>
+                  <li>Relleno sintético</li>
+                  <li>Aguja lanera, tijeras</li>
+                </ul>
+                <h4>Cabeza (tejido en espiral):</h4>
+                <ol>
+                  <li>Anillo mágico de 6 pb (6)</li>
+                  <li>Aum en todos los puntos (12)</li>
+                  <li>[1 pb, 1 aum] x 6 (18)</li>
+                  <li>[2 pb, 1 aum] x 6 (24)</li>
+                  <li>[3 pb, 1 aum] x 6 (30)</li>
+                  <li>Rondas 6-10: 30 pb</li>
+                  <li>[3 pb, 1 dism] x 6 (24)</li>
+                  <li>[2 pb, 1 dism] x 6 (18)</li>
+                  <li>Rellenar firmemente.</li>
+                  <li>[1 pb, 1 dism] x 6 (12)</li>
+                  <li>Dism en todos los puntos (6) - Cerrar.</li>
+                </ol>
+                <p>¡Disfruta tejiendo tu mini oso!</p>
+                <div class="share-buttons">
+                  <a
+                    href="#"
+                    class="share-facebook"
+                    aria-label="Compartir en Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-twitter"
+                    aria-label="Compartir en X (Twitter)"
+                    ><i class="fab fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-whatsapp"
+                    aria-label="Compartir en WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="pattern-card"
+              tabindex="0"
+              data-difficulty="intermedio"
+              data-keywords="gato dormilon mascotas facil"
+            >
+              <h3>Patrón: Gato Dormilón</h3>
+              <img
+                src="./imagenes/gato-dormilon.jpg"
+                alt="Amigurumi de un gato dormilón de crochet"
+              />
+              <p>
+                Teje un simpático gato durmiente para decorar tu hogar o
+                regalar.
+              </p>
+              <button
+                class="show-content-btn"
+                data-type="pattern"
+                data-id="pattern2"
+              >
+                Ver Patrón
+              </button>
+              <div class="full-content hidden" id="pattern2">
+                <h3>Patrón Completo: Gato Dormilón</h3>
+                <p>
+                  ¡Este gato dormilón es perfecto para cualquier amante de los
+                  felinos!
+                </p>
+                <div class="share-buttons">
+                  <a
+                    href="#"
+                    class="share-facebook"
+                    aria-label="Compartir en Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-twitter"
+                    aria-label="Compartir en X (Twitter)"
+                    ><i class="fab fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-whatsapp"
+                    aria-label="Compartir en WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="pattern-card"
+              tabindex="0"
+              data-difficulty="avanzado"
+              data-keywords="unicornio magico fantasia juguete"
+            >
+              <h3>Patrón: Unicornio Mágico</h3>
+              <img
+                src="./imagenes/unicornio.jpg"
+                alt="Amigurumi de un unicornio mágico de crochet con detalles brillantes"
+              />
+              <p>
+                Crea un hermoso unicornio lleno de magia y color con este patrón
+                intermedio.
+              </p>
+              <button
+                class="show-content-btn"
+                data-type="pattern"
+                data-id="pattern3"
+              >
+                Ver Patrón
+              </button>
+              <div class="full-content hidden" id="pattern3">
+                <h3>Patrón Completo: Unicornio Mágico</h3>
+                <p>¡Deja volar tu imaginación con este unicornio!</p>
+                <div class="share-buttons">
+                  <a
+                    href="#"
+                    class="share-facebook"
+                    aria-label="Compartir en Facebook"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-twitter"
+                    aria-label="Compartir en X (Twitter)"
+                    ><i class="fab fa-x-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="share-whatsapp"
+                    aria-label="Compartir en WhatsApp"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="gallery-section"
+        aria-labelledby="gallery-title"
+      >
+        <div class="container">
+          <h2 id="gallery-title">Nuestra Galería de Proyectos</h2>
+          <div
+            class="gallery-grid"
+            role="region"
+            aria-label="Galería de imágenes de amigurumis"
+          >
+            <figure class="gallery-item" tabindex="0">
+              <img
+                src="./imagenes/oso-a-crochet.jpg"
+                alt="Amigurumi de un oso tierno tejido con hilo suave"
+              />
+              <figcaption>Oso Tierno</figcaption>
+            </figure>
+            <figure class="gallery-item" tabindex="0">
+              <img
+                src="./imagenes/conejito-crochet.jpg"
+                alt="Amigurumi de un conejito juguetón con largas orejas"
+              />
+              <figcaption>Conejito Juguetón</figcaption>
+            </figure>
+            <figure class="gallery-item" tabindex="0">
+              <img
+                src="./imagenes/pulpo.jpg"
+                alt="Amigurumi de un pulpo colorido con detalles bordados"
+              />
+              <figcaption>Pulpo Colorido</figcaption>
+            </figure>
+            <figure class="gallery-item" tabindex="0">
+              <img
+                src="./imagenes/amigurumi-zorro-patron.jpg"
+                alt="Amigurumi de un zorro astuto con una bufanda pequeña"
+              />
+              <figcaption>Zorro Astuto</figcaption>
+            </figure>
+            <figure class="gallery-item" tabindex="0">
+              <img
+                src="./imagenes/buho.jpg"
+                alt="Amigurumi de un búho sabio con grandes ojos y detalles de fieltro"
+              />
+              <figcaption>Búho Sabio</figcaption>
+            </figure>
+            <figure class="gallery-item" tabindex="0">
+              <img
+                src="./imagenes/Lindo-Dinosaurio-PDF-Amigurumi-Patron-Gratis1-600x850_c.jpg"
+                alt="Amigurumi de un pequeño dinosaurio de colores brillantes"
+              />
+              <figcaption>Pequeño Dinosaurio</figcaption>
+            </figure>
+          </div>
+          <div class="lightbox" aria-hidden="true">
+            <span
+              class="close-btn"
+              tabindex="0"
+              role="button"
+              aria-label="Cerrar imagen ampliada"
+              >×</span
+            >
+            <img
+              class="lightbox-content"
+              src=""
+              alt="Imagen ampliada de amigurumi"
+            />
+            <div class="caption"></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="contact-section"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <h2 id="contact-title">Contáctanos</h2>
+          <p>
+            ¿Tienes preguntas o quieres compartir tus creaciones? ¡Nos
+            encantaría saber de ti!
+          </p>
+          <form class="contact-form" aria-label="Formulario de contacto">
+            <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>© 2025 El Mundo de los Amigurumis. Todos los derechos reservados.</p>
+        <div class="social-links">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="Visita nuestra página de Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Síguenos en Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            aria-label="Visita nuestro canal de YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
