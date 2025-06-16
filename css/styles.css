@@ -1,21 +1,25 @@
 /* ======================== */
 /* 🎨 Estilos Generales     */
 /* ======================== */
+/* ======================== */
+/* 🎨 Estilos Generales     */
+/* ======================== */
 :root {
-    /* Definición de colores usando propiedades personalizadas (variables CSS) */
-    --primary-color: #ff6f61; /* Coral/Melocotón */
-    --secondary-color: #88b04b; /* Verde Oliva */
-    --tertiary-color: #f7cac9; /* Rosa Pastel */
-    --text-color: #333;
-    --light-bg: #fdfaf6; /* Fondo blanco crema */
-    --dark-bg: #555;
-    --border-color: #ddd;
+    --primary-color: #6A9C82; /* Verde Azulado Suave (calmante, natural) */
+    --secondary-color: #D08C60; /* Terracota / Melocotón Muted (cálido, terroso, complementario) */
+    --tertiary-color: #F0EFEA; /* Crema Muy Claro (neutral, suave, para fondos o detalles sutiles) */
+    --text-color: #333; /* Gris oscuro para el texto principal */
+    --light-bg: #fdfaf6; /* Fondo blanco crema (el que ya tenías, funciona bien) */
+    --dark-bg: #4A4A4A; /* Gris más oscuro para footer/elementos de contraste */
+    --border-color: #D0D0D0; /* Gris claro para bordes */
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Definición de puntos de quiebre para media queries de forma centralizada */
-    --breakpoint-sm: 576px; /* Pequeñas tablets / móviles grandes */
-    --breakpoint-md: 768px; /* Tablets / laptops pequeños */
-    --breakpoint-lg: 1024px; /* Laptops / escritorios */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --header-height-compensation: 4.5rem; 
 }
+
+/* ... el resto de tu CSS sigue igual ... */
 
 /* Restablecimiento de estilos y box-sizing universal */
 * {
@@ -297,7 +301,7 @@ body.header-fixed-padding main {
 /* ======================== */
 .about-section {
     text-align: center;
-    max-width: 900px; /* Max-width más generoso */
+    max-width: 1200px; /* Max-width más generoso */
     margin: 2rem auto;
 }
 
@@ -305,7 +309,7 @@ body.header-fixed-padding main {
 /* 📚 Tutoriales y Patrones */
 /* ======================== */
 .tutorials-section, .patterns-section {
-    padding: 2.5rem 1rem;
+    padding: 1rem 1rem;
     margin: 1.5rem auto;
     max-width: 1200px;
 }
@@ -318,7 +322,7 @@ body.header-fixed-padding main {
     padding: 1rem;
     background-color: var(--tertiary-color);
     border-radius: 8px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.1);
 }
 
 .controls-container label {
@@ -339,11 +343,11 @@ body.header-fixed-padding main {
 .tutorial-grid, .pattern-grid {
     display: grid;
     grid-template-columns: 1fr; /* Una columna para móviles */
-    gap: 1.5rem; /* Espaciado responsivo */
+    gap: 1rem; /* Espaciado responsivo */
 }
 
 .tutorial-card, .pattern-card {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: var(--box-shadow);
     overflow: hidden;
@@ -357,13 +361,33 @@ body.header-fixed-padding main {
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.tutorial-card img, .pattern-card img {
+.tutorial-card img,
+.pattern-card img {
     width: 100%;
-    height: 180px; /* Altura uniforme para las imágenes de tarjeta */
-    object-fit: cover;
+    height: 250px;           /* Puedes ajustar esta altura según lo que necesites */
+    object-fit: contain;     /* Muestra la imagen completa sin recortarla */
     display: block;
-    border-bottom: 1px solid var(--border-color);
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Fondo de relleno (opcional) */
+    border-bottom: 6px solid var(--border-color);
 }
+
+/* Responsive: tablet */
+@media (max-width: 992px) {
+    .tutorial-card img,
+    .pattern-card img {
+        height: 200px;
+    }
+}
+
+/* Responsive: celular */
+@media (max-width: 576px) {
+    .tutorial-card img,
+    .pattern-card img {
+        height: 150px;
+    }
+}
+
 
 .tutorial-card h3, .pattern-card h3 {
     padding: 1rem;
@@ -389,7 +413,7 @@ body.header-fixed-padding main {
     padding: 1.5rem;
     margin-top: 1rem;
     border-radius: 8px;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.05);
     display: none;
     opacity: 0;
     transform: translateY(10px);
@@ -655,22 +679,9 @@ body.header-fixed-padding main {
     gap: 1rem;
 }
 
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
 
-.social-links a {
-    /* Estilos para los iconos de Font Awesome */
-    color: white;
-    font-size: 1.8rem; /* Tamaño del icono */
-    transition: transform 0.2s ease, color 0.2s ease;
-}
 
-.social-links a:hover {
-    transform: translateY(-3px);
-    color: var(--tertiary-color); /* Cambia de color al pasar el ratón */
-}
+
 
 /* ======================== */
 /* 📱 Media Queries        */
@@ -869,4 +880,87 @@ main {
     :root {
         --header-height-compensation: 5.5rem; /* Ejemplo: si tu header es más alto aquí */
     }
+}
+/* Dentro de la sección de Header y Navegación */
+
+.logo {
+    font-size: 1.7rem; /* El tamaño del texto " MUNDO-CROCHET   " */
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    /* Aseguramos que el logo y el texto se alineen y tengan espacio */
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo y el texto */
+    gap: 0.5em; /* Espacio entre la imagen del logo y el texto. Ajusta si es necesario. */
+}
+
+/* REGLA ACTUALIZADA: Estilos para la imagen del logo */
+.site-logo {
+    height: 2rem; /* REDUCE EL TAMAÑO: Ajusta la altura del logo (ej. de 2.5rem a 2rem) */
+    width: 2rem;  /* Asegura que el ancho sea igual a la altura para una forma redonda perfecta */
+    object-fit: cover; /* Asegura que la imagen llene el espacio sin distorsionarse */
+    border-radius: 50%; /* REDONDEA LOS BORDES: Hace la imagen perfectamente redonda */
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* ... el resto de tu CSS ... */
+
+/* Media Queries: Ajusta el tamaño del logo en pantallas más grandes si es necesario */
+@media (min-width: var(--breakpoint-md)) {
+    .site-logo {
+        height: 2.5rem; /* Ejemplo: un poco más grande en desktop */
+        width: 2.5rem;
+    }
+}
+
+/* Y si tienes un breakpoint para pantallas aún más grandes: */
+@media (min-width: var(--breakpoint-lg)) {
+    .site-logo {
+        height: 3rem; /* Ejemplo: aún más grande en pantallas muy amplias */
+        width: 3rem;
+    }
+}
+.main-footer {
+    background-color: #6A9C82;
+    padding: 20px 40px;
+    text-align: center;
+    border-top: 3px solid var(--border-color);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #444;
+}
+
+.main-footer p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: filter 0.3s;
+}
+
+.social-links a:hover img {
+    filter: none;
 }
