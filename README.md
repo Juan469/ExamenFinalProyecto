@@ -1,37 +1,85 @@
-# 🧶 El Mundo de los Amigurumis 🌟
+# MUNDO-CROCHET
+Una plataforma inspiradora para amantes de las manualidades, donde podrás descubrir tutoriales, patrones descargables, explorar una galería de proyectos terminados y conectar con una comunidad creativa.
 
-Este proyecto es una **plataforma web interactiva dedicada al fascinante arte del amigurumi**, el tejido a crochet de pequeños muñecos y figuras. Nace con la misión de ser un recurso completo para entusiastas del crochet de todos los niveles, desde principiantes que dan sus primeros puntos hasta tejedores avanzados buscando inspiración y patrones.
+## 🚀 Características
 
-La página ofrece tutoriales detallados, patrones variados y una galería de inspiración, todo diseñado para fomentar la creatividad y el aprendizaje en el mundo del amigurumi.
-
----
-
-## ✨ Características Principales
-
-* **Tutoriales Interactivos:** Una sección detallada con guías paso a paso de las técnicas fundamentales del crochet para amigurumis. Incluye **imágenes reales** y **videos explicativos** para una experiencia de aprendizaje inmersiva y visual, haciendo que las técnicas sean fáciles de entender y replicar.
-* **Biblioteca de Patrones:** Acceso a una colección de patrones de amigurumis, clasificados por nivel de dificultad. Esto permite a los usuarios encontrar fácilmente su próximo proyecto, ya sea un diseño sencillo para principiantes o algo más complejo para tejedores experimentados.
-* **Galería Inspiradora:** Un espacio visualmente atractivo que muestra una variedad de amigurumis terminados, con **imágenes de alta calidad**. Esta galería busca inspirar y motivar a la comunidad, ofreciendo una funcionalidad de **lightbox** para una visualización ampliada de cada creación.
-* **Funcionalidad de Búsqueda y Filtro:** Permite a los usuarios buscar tutoriales y patrones por palabras clave y filtrarlos por nivel de dificultad (Principiante, Intermedio, Avanzado). Esto mejora la navegabilidad y la experiencia general del usuario.
-* **Diseño Responsivo:** Desarrollado con HTML y CSS puro, el sitio se adapta perfectamente a cualquier tamaño de pantalla, desde ordenadores de escritorio hasta tabletas y teléfonos móviles, garantizando una excelente experiencia de usuario en todos los dispositivos.
-* **Formulario de Contacto:** Facilita la comunicación directa con los administradores del sitio para cualquier pregunta, sugerencia o para que los usuarios puedan compartir sus propias creaciones.
-* **Integración Social:** Incorpora botones para compartir contenido en redes sociales populares (Facebook, X/Twitter, WhatsApp) y enlaces directos a los perfiles sociales del proyecto, fomentando la difusión y la interacción comunitaria.
-
----
+* **Tutoriales Interactivos:** Guías paso a paso para una variedad de manualidades, con opciones para expandir contenido y ver videos incrustados.
+* **Patrones Descargables:** Acceso a patrones gratuitos para costura, punto de cruz, amigurumi y más.
+* **Galería Inspiradora:** Una colección visual de proyectos terminados, con una funcionalidad de lightbox para ver imágenes en detalle.
+* **Filtros y Búsqueda:** Funcionalidad para buscar y filtrar tutoriales/patrones por categoría y dificultad.
+* **Formulario de Contacto:** Un formulario sencillo para que los usuarios puedan enviar preguntas o comentarios.
+* **Diseño Responsivo:** Adaptado para una experiencia óptima en dispositivos móviles, tablets y escritorios.
+* **Estilos Armoniosos:** Una paleta de colores cuidadosamente seleccionada para una estética agradable y coherente.
+* **Iconografía Clara:** Uso de Font Awesome para iconos significativos y un logo personalizado en el header.
 
 ## 🛠️ Tecnologías Utilizadas
 
-Este proyecto está construido con un enfoque en la simplicidad y el rendimiento, utilizando las siguientes tecnologías web estándar:
+* **HTML5:** Estructura semántica del contenido.
+* **CSS3:** Estilos y diseño responsivo, incluyendo Flexbox y Grid.
+    * Variables CSS para una gestión de colores eficiente.
+    * Media Queries para adaptabilidad a diferentes tamaños de pantalla.
+* **JavaScript (ES6+):**
+    * Funcionalidad de menú de navegación móvil (hamburguesa).
+    * Gestión dinámica del `padding-top` del `main` para evitar que el header fijo/sticky corte el contenido.
+    * Toggle para expandir/colapsar el contenido detallado de tutoriales y patrones.
+    * Funcionalidad de búsqueda y filtrado dinámico.
+    * Sistema de Lightbox para la galería de imágenes.
+    * Validación básica de formulario de contacto.
+* **Font Awesome:** Biblioteca de iconos vectoriales para elementos visuales.
+* **Landbot:** Plataforma para la creación de chatbots conversacionales, utilizada para mejorar la interacción con el usuario (ej. soporte, FAQs).
 
-* **HTML5:** Para estructurar semánticamente todo el contenido de la página web.
-* **CSS3:** Para aplicar estilos visuales, gestionar el diseño responsivo y añadir animaciones que mejoran la experiencia de usuario.
-* **JavaScript (Vainilla JS):** Implementa la interactividad de la interfaz de usuario, incluyendo:
-    * La lógica para el menú de navegación adaptable (menú hamburguesa).
-    * La funcionalidad de "Ver Tutorial/Patrón" que muestra u oculta contenido adicional.
-    * Los algoritmos de búsqueda y filtro para las secciones de tutoriales y patrones.
-    * La implementación del lightbox para la visualización ampliada de imágenes en la galería.
-* **Font Awesome:** Utilizado para la inclusión de iconos escalables y visualmente atractivos en toda la interfaz.
+## 📦 Estructura del Proyecto
+/MUNDO.CROCHET
+│
+├── index.html             # Página principal
+├── /css
+│   └── styles.css         # Estilos personalizados
+├── /js
+│   └── script.js          # Lógica JS básica (interacción, validación)
+├── /assets
+│   ├── /img               # Imágenes del producto/marca
+│   └── /fonts             # (Opcional) Tipografías externas
+├── README.md              # Descripción del proyecto (para GitHub)
+└── .gitignore             # (Opcional) Ignorar archivos innecesarios
 
----
+
+
+
+## ⚙️ Configuración y Ejecución
+
+Este es un proyecto puramente frontend. No requiere de un servidor backend o configuraciones complejas.
+
+1.  **Clonar el repositorio (si estás usando Git):**
+    ```bash
+    git clone <URL_DE_TU_REPOSITORIO>
+    cd manualidades-fantasticas
+    ```
+2.  **Descargar los archivos:** Si no usas Git, simplemente descarga el archivo ZIP del repositorio y descomprímelo.
+3.  **Abrir en el navegador:** Abre el archivo `index.html` directamente en tu navegador web preferido.
+
+    ```bash
+    # Ejemplo para abrir en VS Code (si tienes la extensión "Live Server")
+    # Clic derecho en index.html -> Open with Live Server
+    ```
+
+## 📝 Uso
+
+Navega a través de las secciones utilizando la barra de navegación.
+
+* **Tutoriales y Patrones:** Utiliza los campos de búsqueda y los selectores de categoría/dificultad para filtrar el contenido. Haz clic en "Ver Más" para expandir los detalles.
+* **Galería:** Haz clic en cualquier imagen para abrirla en una vista de Lightbox ampliada.
+* **Contacto:** Rellena el formulario para enviar un mensaje.
+
+## 🤝 Contribuciones
+
+Si deseas contribuir a este proyecto, por favor, sigue estos pasos:
+
+1.  Haz un "fork" de este repositorio.
+2.  Crea una nueva rama (`git checkout -b feature/nombre-de-tu-caracteristica`).
+3.  Realiza tus cambios y commitea (`git commit -m 'feat: Añade nueva característica'`).
+4.  Push a tu rama (`git push origin feature/nombre-de-tu-caracteristica`).
+5.  Abre un Pull Request.
+
 
 ## 🚀 Cómo Empezar (Uso Local)
 
