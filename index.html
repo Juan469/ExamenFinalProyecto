@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aprende a tejer amigurumis con nuestros tutoriales fáciles y patrones adorables. Amigurumi World es tu guía completa para crear muñecos de crochet.">
     <meta name="keywords" content="amigurumi, crochet, tutoriales, patrones, tejido, muñecos, DIY, manualidades">
-    <title>Amigurumi World: Tutoriales, Patrones y Más</title>
+    <title>MUNDO-CROCHET</title>
     <link rel="stylesheet" href="./css/styles.css">
     </head>
 <body>
     <header class="main-header">
         <nav class="main-nav">
-            <a href="#hero" class="logo">Tejiendo con amor</a>
+          <a href="#hero" class="logo"> MUNDO-CROCHET </a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
                 <span class="hamburger"></span>
                 <span class="hamburger"></span>
@@ -148,7 +148,7 @@
 
             <div class="pattern-grid" id="patternGrid">
                 <div class="pattern-card" data-title="Oso Clasico Amigurumi" data-difficulty="facil">
-                    <img src="/assets/img/oso-clasico.jpg" alt="Patrón de Oso Clásico">
+                    <img src="/assets/img/oso-clasico.jpg" alt="Patrón de Oso Clásico" >
                     <h3>Oso Clásico</h3>
                     <p>Un adorable osito perfecto para principiantes. Ideal para un primer proyecto grande.</p>
                     <button class="btn primary-btn show-content-btn" data-target="fullContentOso">Ver Patrón</button>
@@ -233,7 +233,7 @@
                     <figcaption>Buho Dulce</figcaption>
                 </figure>
                  <figure class="gallery-item">
-                    <img src="./assets/img/dinosaurio.jpg" alt="Amigurumi de dinosaurio">
+                    <img src="./assets/img/Lindo-Dinosaurio-PDF-Amigurumi-Patron-Gratis1-600x850_c.jpg" alt="Amigurumi de dinosaurio">
                     <figcaption>Dinosaurio Sonriente</figcaption>
                 </figure>
                 <figure class="gallery-item">
@@ -285,12 +285,33 @@
     <footer class="main-footer">
         <p>&copy; 2025 Amigurumi World. Todos los derechos reservados.</p>
         <div class="social-links">
-            <a href="#" aria-label="Síguenos en Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="#" aria-label="Síguenos en Instagram"><img src="images/instagram-icon.png" alt="Instagram"></a>
-            <a href="#" aria-label="Síguenos en Pinterest"><img src="images/pinterest-icon.png" alt="Pinterest"></a>
+            <a href="#" aria-label="Síguenos en Facebook"><img src="./assets/img/facebook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Síguenos en Instagram"><img src="./assets/img/instagram.webp" alt="Instagram"></a>
+            <a href="#" aria-label="Síguenos en Pinterest"><img src="./assets/img/" alt="Pinterest"></a>
         </div>
     </footer>
 
     <script src="./js/scripts.js"></script>
+
+    <script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2997756-98SV7NTWPK5OQVZ7/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
 </body>
 </html>
